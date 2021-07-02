@@ -168,3 +168,109 @@ header .navbar a:hover {
 .protection .box-container .box p {
     font-size: 1.5rem;
 }
+
+.protection .box-container .box:hover {
+
+    transform: translateY(-1rem);
+    transition: 0.3s;
+}
+
+/*************Symtoms Section *******************/
+.symtoms {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.symtoms .left {
+
+    flex: 1 1 40rem;
+}
+.symtoms .left h2 {
+
+    font-size: 3rem;
+}
+.symtoms .left p {
+
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+.symtoms .left ul {
+    list-style: disc;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.symtoms .left ul .list-right {
+
+    padding-left:4.5rem
+}
+.symtoms .left ul li {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+.symtoms .left .btn {
+
+    display: inline-block;
+    padding: 2rem 3rem;
+    background-color: #e74c3c;
+    color: #fff;
+    width: 15rem;
+    margin-top: 4rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.symtoms .right{
+
+    flex: 1 1 40rem;
+}
+
+.symtoms .right img {
+
+    width: 100%;
+}
+
+/****************Prevention Section ***************/
+
+.prevention {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.prevention .row {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.prevention .row .image,.content {
+
+    flex: 1 1 40rem;
+}
+.prevention .row .content h2 {
+
+    font-size: 3.5rem;
+    color: #2c3e50;
+}
+
+.prevention .row .content p {
+
+    font-size: 1.8rem;
+    padding: 2rem 0;
+}
+
+.prevention .row .image img {
+
+    width: 100%;
+}
