@@ -28,16 +28,37 @@
     <section class="home">
         <div class="content">
             <h3>Covid-19</h3>
-            <h1>Stay Safe, Stay Home</h1>
+            <h1>Restez en sécurité, restez chez vous</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nesciunt odit pariatur reprehenderit illum, nulla officia quia fuga deserunt quibusdam officiis molestias modi cupiditate. Aliquam expedita corrupti voluptas inventore dolore.</p>
         </div>
         <div class="home-image">
             <img src="imgs/banner.jpg" alt="">
         </div>
     </section>
+    <div class="corona">
+        <h1>Données en temps reel du corana en France</h1>
+        <table>
+        <thead>
+            <tr>
+                <th>Pays</th>
+                <th>Nouveau cas</th>
+                <th>Total de cas</th>
+                <th>Décés</th>
+                <th>Retablis</th>
+            </tr>
+        
+        </thead>
+        <tbody>
+            <tr id="data">
+            
+            </tr>
+        </tbody>
+        </table>
+        <button>Refraichir</button>
+    </div>
     <!--Start Proetection Section-->
     <section class="protection">
-        <h2 class="heading">Take Steps To Protect Yourself</h2>
+        <h2 class="heading">Prenez des mesures pour vous protéger</h2>
         <div class="box-container">
             <div class="box">
                 <img src="imgs/mask.jpg" alt="mask">
@@ -59,7 +80,7 @@
     <!--Start Symtoms Section-->
     <section class="symtoms" id="symtoms">
         <div class="left">
-            <h2>What are the main Symtoms ?</h2>
+            <h2>Quels sont les principaux symptômes ? ?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea nam laboriosam itaque hic fuga libero, consequuntur perferendis! Necessitatibus eius facere, quisquam ad reprehenderit in iste repellat incidunt nisi eos!</p>
             <ul>
                 <div class="list-left">
@@ -86,7 +107,7 @@
                 <img src="imgs/dont-img.png" alt="dont">
             </div>
             <div class="content">
-                <h2>Things not to do during covid</h2>
+                <h2>Ce qu'il ne faut pas faire pendant le covid</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quae fuga a. Praesentium amet unde ut mollitia id, repellat sapiente voluptatem nisi velit inventore quae fugit blanditiis non dolorum dolores!</p>
                 <ul>
                     <li>Do not share eating</li>
@@ -98,7 +119,7 @@
         <div class="row">
         
             <div class="content">
-                <h2>Things not to do during covid</h2>
+                <h2>Ce qu'il faut faire pendant le covid</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quae fuga a. Praesentium amet unde ut mollitia id, repellat sapiente voluptatem nisi velit inventore quae fugit blanditiis non dolorum dolores!</p>
                 <ul>
                     <li>Do not share eating</li>
@@ -113,7 +134,7 @@
     </section>
     <!--HandWash Section Start-->
     <section class="handwash">
-        <h2 class="heading">how to wash you hand properly</h2>
+        <h2 class="heading">Comment se laver les mains correctement</h2>
         <div class="box-container">
             <div class="box">
                 <img src="imgs/hadnwash-1.png" alt="">
@@ -149,7 +170,7 @@
     </section>
     <!--Spread Section-->
     <section class="spread">
-        <h2 class="heading">How Covid 19 spreads over the world</h2>
+        <h2 class="heading">Comment Covid 19 se répandu dans le monde entier</h2>
         <div class="box-container">
         
         </div>
@@ -205,5 +226,21 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        
+            init()
+
+            function init(){
+            
+                var url = "https://tr.transport.data.gouv.fr/"
+                $.get(url, function(data) {
+
+                    console.log(data)
+                })
+            }
+        })
+    </script>
 </body>
 </html>
